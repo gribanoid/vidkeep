@@ -24,3 +24,6 @@ go.work
 *.iws
 .dir-locals.el
 .vscode
+
+#config
+config.yml
