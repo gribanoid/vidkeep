@@ -17,6 +17,7 @@ func init() {
 }
 
 func main() {
-	srv := server.NewHTTPServer(":"+c.Server.Port, c.Storage.Path)
+	srv := server.NewHTTPServer(&c)
+	log.Printf("Server started on http://localhost:%s", c.Server.Port)
 	log.Fatal(srv.ListenAndServe())
 }

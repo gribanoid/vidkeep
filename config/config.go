@@ -8,7 +8,9 @@ import (
 
 type Config struct {
 	Server struct {
-		Port string `yaml:"port"`
+		Port        string `yaml:"port"`
+		BearerToken string `yaml:"bearerToken"`
+		NeedAuth    bool   `yaml:"needAuth"`
 	} `yaml:"server"`
 	Storage struct {
 		Path string `yaml:"path"`
